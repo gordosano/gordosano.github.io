@@ -1,0 +1,359 @@
+html{
+    background: url('/background-6.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    background-color: #1aa3c9;
+}
+
+head{
+  background-color: #1aa3c9;
+}
+body{
+  font-family: 'Lato', serif;
+  color: #fff;
+  margin:0;
+  background-color: #1aa3c9;
+}
+
+.en {
+  display:block;
+}
+
+.es {
+  display:none;
+}
+
+#btn-en {
+  background:#fff;
+  color:#1aa3c9;
+}
+
+.lang-button{
+  display: inline-block;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 1.5px solid #fff;
+  border-radius: 15px;
+  -moz-border-radius: 35px;
+}
+
+.lang-button:hover{
+  background:#fff;
+  color:#1aa3c9;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  cursor:pointer;
+}
+
+.lang-btn-wrap{
+  padding-top:0;
+  margin-top:15px;
+  line-height: 0.5em;
+}
+
+.background{
+  width: 100%;
+  position:relative;
+  z-index: 0;
+}
+.background:after {
+  width:100%;
+  content:'';
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  background: linear-gradient(to left, #1aa3c9 0%,rgba(255,255,255,0) 69%);
+  height:100%;
+}
+
+.sidebar{
+  background: linear-gradient(to left, #1aa3c9 0%,rgba(255,255,255,0) 100%);
+  position: absolute;
+  text-align: right;
+  left: 5%;
+  right: 0;
+  padding-left:20%;
+  padding-right:5%;
+  padding-bottom:1%;
+  font-size: 64px;
+  z-index: 1;
+  margin-top:0px;
+  min-height: 100vh;
+  white-space: wrap; overflow:hidden;text-overflow: ellipsis;
+}
+
+.title-text-landing{
+  margin-top:55px;
+  margin-bottom: 0px;
+}
+.title-text-mobile{
+  display:none;
+}
+
+.day-heading{
+  font-size: 26px;
+}
+
+p {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.nav{
+  padding-bottom: 40px;
+  padding-top:0px;
+  margin-top:0px;
+}
+
+.nav a{
+  text-decoration:none;
+}
+
+/*.nav a::before{
+  content: '→ ';
+}
+
+.nav a:hover{
+  font-style: normal;
+  text-decoration: underline;
+}*/
+
+a {
+  color:#fff;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+.date {
+  font-size: 18px;
+  padding-top:25px;
+}
+
+.menu-link {
+  text-decoration: none;
+}
+
+@media only screen
+and (min-device-width : 1900px) {
+  /* giant */
+  .sidebar{
+    font-size: 88px;
+    left: 0;
+    right: 0;
+    padding-left:25%;
+    padding-right:6%;
+    padding-bottom:1%;
+  }
+
+  .day-heading{
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 26px;
+  }
+
+  .date {
+    font-size: 22px;
+  }
+  body{
+    background-color: #1aa3c9;
+  }
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  { /* iPad */
+  body{
+    background-color: #1aa3c9;
+  }
+  html{
+      background: url('/img/maya-dumpling.jpg') no-repeat center center fixed;
+    }
+  .sidebar{
+    font-size: 54px;
+    left: 0;
+    right: 0;
+    padding-left:25%;
+    padding-right:6%;
+    padding-bottom:1%;
+  }
+  .title-text-landing{
+    display:none
+  }
+  .title-text-mobile{
+    margin-top:55px;
+    margin-bottom:0px;
+    display:block;
+  }
+
+  .nav{
+    padding-bottom: 35px;
+  }
+
+  .day-heading{
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .date {
+    font-size: 18px;
+  }
+  .lang-button{
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
+
+@media only screen
+and (min-device-width : 568px)
+and (max-device-width : 768px) { /* bigger phone */
+  html{
+      background: url('/img/maya-dumpling.jpg') no-repeat center center fixed;
+    }
+  .sidebar{
+    font-size: 44px;
+    left: 0;
+    right: 0;
+    padding-left:25%;
+    padding-right:6%;
+    padding-bottom:1%;
+  }
+  .nav{
+    padding-bottom: 30px;
+  }
+
+  .day-heading{
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .date {
+    font-size: 16px;
+  }
+  body{
+    background-color: #1aa3c9;
+  }
+  .lang-button{
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .title-text-landing{
+    display:none
+  }
+  .title-text-mobile{
+    margin-top:55px;
+    margin-bottom:0px;
+    display:block;
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) { /* small iPhone */
+  html{
+      background: url('/img/maya-dumpling.jpg') no-repeat center center fixed;
+    }
+  .sidebar{
+    font-size: 34px;
+    left: 0;
+    right: 0;
+    padding-left:20%;
+    padding-right:4%;
+    padding-bottom:1%;
+  }
+  .nav{
+    padding-bottom: 25px;
+  }
+  .day-heading{
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+  body{
+    background-color: #1aa3c9;
+  }
+  .lang-button{
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .title-text-landing{
+    display:none
+  }
+  .title-text-mobile{
+    margin-top:55px;
+    margin-bottom:0px;
+    display:block;
+  }
+}
+
+
+
+@media only screen and (max-device-width: 420px) { /* tiny screen */
+  html{
+      background: url('/img/maya-dumpling.jpg') no-repeat center center fixed;
+    }
+  .sidebar{
+    font-size: 36px;
+    left: 0;
+    right: 0;
+    padding-left:20%;
+    padding-right:4%;
+    padding-bottom:1%;
+  }
+  .nav{
+    padding-bottom: 22px;
+  }
+
+  .day-heading{
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+  body{
+    background-color: #1aa3c9;
+  }
+  .lang-button{
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .title-text-landing{
+    display:none
+  }
+  .title-text-mobile{
+    margin-top:55px;
+    margin-bottom:0px;
+    display:block;
+  }
+}
