@@ -35,6 +35,14 @@ img{
   text-align: center;
 }
 
+a{
+  color: #fff;
+}
+
+a:hover{
+  color: var(--gold);
+}
+
 .link a{
   font-size: 14;
   padding-left: 10px;
